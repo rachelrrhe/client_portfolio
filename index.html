@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Rachel He</h1>
+        <nav class="main-nav">
+            <button onclick="location.href='#about'" onmouseover="hover('aboutb')" id="aboutb">About</button>
+            <button onclick="location.href='#skills'" onmouseover="hover('skillsb')" id="skillsb">Skills</button>
+            <button onclick="location.href='#projects'" onmouseover="hover('projectsb')" id="projectsb">Projects</button>
+            <button onclick="location.href='#recommendations'" onmouseover="hover('recommendationsb')" id="recommendationsb">Recommendations</button>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-row">
+                <img src="profile.jpg" alt="Rachel He" width="300px" height="450px">
+                <div class="about-text">
+                    <p>
+                        Hi! I'm Rachel He, a freshman majoring in 
+                        <span class="bold">Computer Science</span> at the 
+                        <span class="bold">University of Southern California</span>.<br>
+                        I am passionate about software development and eager to contribute to innovative projects. 
+                        In my free time, I enjoy developing small games and exploring visual arts.
+                    </p>
+                    <h3>Learner's Profile</h3>
+                    <ul>
+                        <li><span class="bold">Courses:</span>
+                            <ul>
+                                <li>Object Oriented Programming</li>
+                                <li>Discrete Methods in Computer Science</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><span class="bold">Languages:</span> Java, C++, Python, C#, HTML, CSS, JavaScript</li>
+                <li><span class="bold">Dev Tools:</span> Unity, JSFiddle, Tensorflow, Tailwind, Git</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="game-carousel" aria-label="Playable games">
+                <nav class="game-navigation" aria-label="Choose a game">
+                    <button class="game-selector is-active" type="button" data-game="0" aria-pressed="true" title="Play An aPpLe A daY">
+                        <img src="AppleCore.png" alt="">
+                    </button>
+                    <button class="game-selector" type="button" data-game="1" aria-pressed="false" title="Play DIMENSIONS">
+                        <img src="Door.jpg" alt="">
+                    </button>
+                    <button class="game-selector" type="button" data-game="2" aria-pressed="false" title="Play Cats and Cakes">
+                        <img src="OneStar.jpg" alt="">
+                    </button>
+                </nav>
+                <div class="game-viewport">
+                    <div class="game-track">
+                        <article class="game-project apple-game">
+                            <h3>An aPpLe A daY</h3>
+                            <div class="game-frame">
+                                <iframe src="https://itch.io/embed-upload/14564304?color=333333" title="An aPpLe A daY game" allowfullscreen width="950" height="580">
+                                    <a href="https://rachelhe.itch.io/an-apple-a-day">Play An aPpLe A daY on itch.io</a>
+                                </iframe>
+                            </div>
+                            <p><a href="https://rachelhe.itch.io/an-apple-a-day" target="_blank" rel="noopener">Open on itch.io</a></p>
+                        </article>
+                        <article class="game-project dimensions-game">
+                            <h3>DIMENSIONS</h3>
+                            <div class="game-frame">
+                                <iframe src="https://itch.io/embed-upload/14544221?color=333333" title="DIMENSIONS game" allowfullscreen width="950" height="580">
+                                    <a href="https://rachelhe.itch.io/dimensions">Play DIMENSIONS on itch.io</a>
+                                </iframe>
+                            </div>
+                            <p><a href="https://rachelhe.itch.io/dimensions" target="_blank" rel="noopener">Open on itch.io</a></p>
+                        </article>
+                        <article class="game-project cats-game">
+                            <h3>Cats and Cakes</h3>
+                            <div class="game-frame">
+                                <iframe src="https://itch.io/embed-upload/14414445?color=333333" title="Cats and Cakes game" allowfullscreen width="640" height="380">
+                                    <a href="https://rachelhe.itch.io/catforcakes">Play Cats and Cakes on itch.io</a>
+                                </iframe>
+                            </div>
+                            <p><a href="https://rachelhe.itch.io/catforcakes" target="_blank" rel="noopener">Open on itch.io</a></p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="recommendations">
+            <h2>Recommendations</h2>
+            <p>This is the recommendations section.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Rachel He</p>
+    </footer>
+</body>
+</html>
